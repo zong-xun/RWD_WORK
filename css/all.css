@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+index css 設定
+*/
+.wrap {
+
+}
+.header {
+    background: #f6f6f6;
+    padding: 5px;
+}
+.header ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+.header li:first-child{
+    margin-right: 10px;
+}
+.twitter{
+	color: #83caf8;
+	font-weight: bold;
+}
+.fb{
+    color: #6c7bad;
+	font-weight: bold;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+	box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%);
+}
+.logo{
+    margin:5px 10px;
+}
+.menu_list div{
+    display: flex;
+    align-items: center;
+	width: 100%;
+    justify-content: space-around;
+}
+.menu_list{
+	display: flex;
+	margin-right: 7px;
+	width: 350px
+}
+a {
+	text-decoration: none;
+  }
+.menu_list a{
+	color: #48d4aa;
+}
+
+.menu_list div:hover{
+	border-bottom: 5px #48d4aa solid;
+}
+.content{
+	display: flex;
+    margin-top: 80px;
+	margin-right: 1%;
+    margin-left: 1%;
+	/* justify-content: space-around; */
+}
+.card{
+	text-align: center;
+	width: 30%;
+	box-shadow: 0 6px 15px -2px rgb(0 0 0 / 20%);
+	padding: 0px 15px;
+	margin-right: 4%;
+}
+.card:last-child{
+	margin-right: 0;
+}
+.card h1{
+	font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card p{
+	text-align: left;
+    line-height: 30px;
+    letter-spacing: 2px;
+	margin-top: 10px;
+}
+.card .card_jq{
+	text-align: center;
+	margin-right: 95px;
+
+}
+.card_li{
+	display: flex;
+    text-align: left;
+    line-height: 30px;
+	justify-content: center;
+	
+}
+.card_li li{
+	list-style-type: disc;
+}
+
+
+@media (max-width:768px) {
+.menu{
+	display:block;
+}
+.menu_list{
+	flex-wrap: wrap;
+	width: 100%;
+}
+.menu_list div{
+	flex-wrap: wrap;
+	width: 50%;
+	padding: 10px 0;
+}
+.menu_list div:hover{
+	border-bottom:none;
+	background-color: #48d4aa;
+}
+.menu_list div:hover a{
+	color: white;
+}
+
+.logo{
+	text-align: center;
+}
+.content{
+	flex-wrap: wrap;
+}
+.card{
+	width: 100%;
+	margin-bottom: 30px;;
+	margin-right: 0;
+}
+
+.card:last-child{
+	width: 100%;
+	margin-bottom: 0px;;
+}
+}
+
+@media (max-width:375px) {
+
+}
